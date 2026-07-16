@@ -697,12 +697,12 @@
   <span class="section-tag">Google Ads API Integration</span>
   <h2 class="section-title">AugiScale Ads Manager —<br>our Google Ads API tool</h2>
   <p class="section-desc">
-    AugiScale Ads Manager is the in-house tool built and operated by Augis (augisscale.com) on top of the Google Ads API. We use it to create, manage and report on Search and Performance Max campaigns — for our own advertiser accounts and for client accounts we manage under explicit client authorization.
+    AugiScale Ads Manager is the in-house console Augis built on the official Google Ads API client library. Today we manage our own and our clients' Search and Performance Max campaigns through the standard Google Ads interface; the console below is a <strong>working prototype, validated against Google Ads test accounts</strong>, with production access pending Google's API review. Client accounts are managed only under explicit authorization via our manager account (MCC 941-449-3856).
   </p>
 
   <!-- TOOL PROTOTYPE MOCK -->
   <div style="background:#0d0d0d;border-radius:16px;padding:1.75rem 2rem;margin-bottom:3rem;font-family:'Consolas','Menlo',monospace;font-size:0.8125rem;line-height:1.8;color:#d4d4d4;overflow-x:auto;">
-    <div style="color:#7a7a7a;margin-bottom:0.75rem;">AugiScale Ads Manager — operator console (prototype)</div>
+    <div style="color:#7a7a7a;margin-bottom:0.75rem;">AugiScale Ads Manager — operator console (working prototype · test account data)</div>
     <div><span style="color:#6b8eff;">operator&gt;</span> report campaigns --account 767-896-2523 --last 7d</div>
     <div style="color:#9cdcfe;">┌ Campaign                    Cost      Clicks  Conv(WhatsApp)  CPL</div>
     <div style="color:#9cdcfe;">│ PROTOCOLO 02/03      R$ 312,40      41           9      R$ 34,71</div>
@@ -762,6 +762,14 @@
       </div>
       <div class="service-name">Compliance</div>
       <p class="service-text">This integration complies with the Google Ads API Terms of Service and Google's advertising policies. Client accounts are accessed only with the client's authorization through standard MCC linking, and access is removed when an engagement ends.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      </div>
+      <div class="service-name">Where the Data Goes — the Augis Platform</div>
+      <p class="service-text">The campaigns we manage generate WhatsApp leads that flow into Augis, our proprietary CRM platform for dental clinics: lead inbox, kanban pipeline, AI-assisted first response, appointment scheduling and attendance tracking. The platform's monthly report reconciles ad spend against real appointments and payments — its ingestion endpoint for Google Ads cost data is already live, waiting for this API access to close the loop.</p>
     </div>
 
   </div>
